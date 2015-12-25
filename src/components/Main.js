@@ -27,10 +27,10 @@ class AppComponent extends React.Component {
                                    this.state.salt,
                                    this.state.iterations,
                                    this.state.keylen,
-                                   this.lower,
-                                   this.upper,
-                                   this.number,
-                                   this.special)
+                                   this.state.lower,
+                                   this.state.upper,
+                                   this.state.number,
+                                   this.state.special)
     });
   }
 
