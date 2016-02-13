@@ -1,7 +1,7 @@
 {
   "generator-react-webpack": {
     "appName": "keymaker",
-    "style": "sass",
-    "postcss": true
+    "style": "css",
+    "postcss": false
   }
 }
