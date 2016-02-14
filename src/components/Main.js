@@ -44,26 +44,38 @@ class AppComponent extends React.Component {
 
   render() {
     return (
-      <div className="index">
+      <div className="container">
         <form className="keymakerForm" onSubmit={this.handleSubmit}>
-          <input
-            type="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.handlePasswordChange}
-          />
-          <input
-            type="password"
-            placeholder="Salt"
-            value={this.state.salt}
-            onChange={this.handleSaltChange}
-          />
-          <input type="submit" value="Post" />
-          <input
-            type="text"
-            value={this.state.key}
-            disabled="true"
-          />
+          <div className="form-group">
+            <label className="sr-only">Password</label>
+            <input
+              className="form-control"
+              type="password"
+              placeholder="Password"
+              value={this.state.password}
+              onChange={this.handlePasswordChange}
+            />
+          </div>
+          <div className="form-group">
+            <label className="sr-only">Salt</label>
+            <input
+              className="form-control"
+              type="password"
+              placeholder="Salt"
+              value={this.state.salt}
+              onChange={this.handleSaltChange}
+            />
+          </div>
+          <div className="form-group">
+            <label className="sr-only">Code</label>
+            <input
+              className="form-control"
+              type="text"
+              value={this.state.key}
+              disabled="true"
+            />
+          </div>
+          <button type="submit" className="btn btn-default">Key</button>
         </form>
       </div>
     );

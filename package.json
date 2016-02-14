@@ -19,9 +19,12 @@
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:patch": "npm version patch && npm publish && git push --follow-tags"
   },
-  "repository": "hemslo/keymaker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hemslo/keymaker.git"
+  },
   "keywords": [],
-  "author": "Hemslo Wang",
+  "author": "Hemslo Wang <hemslo.wang@gmail.com>",
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-eslint": "^5.0.0-beta4",
