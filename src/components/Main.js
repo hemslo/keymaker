@@ -1,4 +1,5 @@
 require('normalize.css');
+require('bootstrap/dist/css/bootstrap.css');
 require('styles/App.css');
 
 import React from 'react';
@@ -45,6 +46,7 @@ class AppComponent extends React.Component {
   render() {
     return (
       <div className="container">
+        <h1>Keymaker</h1>
         <form className="keymakerForm" onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label className="sr-only">Password</label>
@@ -72,7 +74,7 @@ class AppComponent extends React.Component {
               className="form-control"
               type="text"
               value={this.state.key}
-              disabled="true"
+              readOnly="true"
             />
           </div>
           <button type="submit" className="btn btn-default">Key</button>
